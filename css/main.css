@@ -1,0 +1,88 @@
+/* GLOBAL */
+
+.header {
+    text-align: center;
+    font-size: 25px;
+    vertical-align: middle;
+    line-height: 40px;
+    height: 44px;
+}
+
+.header .h1 {
+    text-align: center;
+    font-size: 25px;
+    vertical-align: middle;
+    line-height: 40px;
+    height: 44px;
+}
+
+.subheader {
+    text-align: left;
+    line-height: 40px;
+    height: 40px;
+    margin-top: 44px;
+}
+
+.subheadertext {
+    padding-left: 10px;
+    font-weight: lighter;
+}
+
+.subnavbar {
+    line-height: 50px;
+    height: 50px;
+}
+
+.edusubfooter {
+    /*height: 64px;*/
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* EDUSUB LOGIN */
+
+.logincontent {
+    text-align: center;
+}
+
+.loginselection {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+img#loginlogo {
+    width: 40%;
+    display: block;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+.loginbox {
+    margin: 10%;
+    text-align: center;
+}
+
+.loginmisc {
+    text-align: center;
+}
+
+
+/* PAGE 1 LIST OF VACANT POSITIONS */
+
+#schoolpositions {
+    margin-top: 44px;
+}
+
+
+/* SCHOOL PAGE 1 LIST OF VACANT POSITIONS */
+
+#teachersavailabe {
+    margin-top: 44px;
+}
