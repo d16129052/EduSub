@@ -1,0 +1,9 @@
+#LandingButtons{
+	position: absolute;
+  	text-align: center;
+  	top: 75%;
+  	left: 0;
+  	right: 0;
+  	transform: translateY(-50%);
+  	z-index: 1;
+}
