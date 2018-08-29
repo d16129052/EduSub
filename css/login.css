@@ -1,9 +1,20 @@
 #LandingButtons{
+	font-family: helvetica neue;
 	position: absolute;
   	text-align: center;
-  	top: 75%;
+  	top: 87%;
   	left: 0;
   	right: 0;
   	transform: translateY(-50%);
   	z-index: 1;
+  	margin-left: 2.3%;
+  	border-radius: 4px;
+}
+
+button.ui-btn.ui-btn-inline {
+	width: 45%;
+}
+
+.button1 {
+	background-color: #d3c208;
 }
