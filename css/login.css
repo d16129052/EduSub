@@ -7,7 +7,7 @@
   	right: 0;
   	transform: translateY(-50%);
   	z-index: 1;
-  	margin-left: 2.3%;
+  	margin-left: 2.2%;
   	border-radius: 4px;
 }
 
@@ -17,4 +17,13 @@ button.ui-btn.ui-btn-inline {
 
 .button1 {
 	background-color: #d3c208;
+}
+
+.ui-link.ui-btn.ui-btn-a.ui-btn-inline.ui-shadow.ui-corner-all {
+  width: 37.5%;
+}
+
+#popupMenu{
+  height: 100%;
+  background-color: red;
 }

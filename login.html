@@ -22,10 +22,26 @@
 </head>
 
 <body>
+
 	
+	<!-- Login and register buttons -->
 	<div id="LandingButtons">
-	<button class="button button1" data-inline="true">REGISTER</button>
-	<button class="button button2" data-inline="true">LOGIN</button>
+		<a href="#popupLogin" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-theme="a" data-transition="pop">REGISTER</a>
+		<a href="#popupLogin" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-theme="a" data-transition="pop">LOGIN</a>
+
+		<div data-role="popup" id="popupMenu" data-theme="a">
+		    <div data-role="popup" data-overlay-theme="a" id="popupLogin" data-theme="a" class="ui-corner-all">
+		        <form>
+		            <div style="padding:10px 20px;">
+		              <h3>Login with email and password...</h3>
+		              <input type="text" name="user" id="un" value="" placeholder="email" data-theme="a">
+		              <input type="password" name="pass" id="pw" value="" placeholder="password" data-theme="a">
+		              <a href>Forgot your password?</a>
+		              <button type="submit" data-theme="b" data-icon="check">Sign in</button>
+		            </div>
+		        </form>
+		    </div>
+		</div>
 	</div>
 
 
