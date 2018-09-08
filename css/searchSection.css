@@ -1,0 +1,148 @@
+/* GLOBAL */
+
+* {
+    font-family: helvetica neue;
+}
+
+
+
+/* TEACHER SEARCH SECTION */
+
+
+/* Header */
+
+.header {
+    text-align: center;
+    font-size: 25px;
+    vertical-align: middle;
+    line-height: 40px;
+    height: 44px;
+    box-shadow: 0 0 20px 0px #00000042;
+
+
+}
+
+.header .h1 {
+    text-align: center;
+    font-size: 25px;
+    vertical-align: middle;
+    line-height: 40px;
+    height: 44px;
+}
+
+.header.ui-header.ui-bar-inherit.ui-header-fixed.slidedown {
+	background-color: #229aab;
+    color: white;
+    text-shadow: none;
+}
+
+
+.ui-btn-right.ui-link.ui-btn.ui-icon-user.ui-btn-icon-left.ui-shadow.ui-corner-all {
+    color: #fff;
+    text-shadow:  none;
+    background-color: #219aab;
+    border-color: #d8d8d8;
+	}
+
+
+/* Subheader */
+
+.subheader {
+    text-align: left;
+    line-height: 40px;
+    height: 40px;
+    margin-top: 44px;
+
+    box-shadow: 0 0 20px 0px #00000042;
+
+}
+
+.subheadertext {
+    padding-left: 10px;
+    font-weight: lighter;
+    background-color: #ddd;
+    color: #219aab;
+    text-shadow: none;
+
+}
+
+.subnavbar {
+    line-height: 50px;
+    height: 50px;
+}
+
+.ui-btn-right.ui-link.ui-btn.ui-shadow.ui-corner-all {
+    background-color: #219aab;
+    color: white;
+    text-shadow:  none;
+    border-color: #219aab;
+}
+
+
+
+/* Body */
+
+#schoolpositions {
+    margin-top: 5.7vh;
+}
+
+.ui-btn-icon-right:after {
+	background-color: #219aab;
+}
+
+
+/* Footer */
+
+#footer {
+    height: 7.5vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 20px 0px #00000042;
+
+}
+
+.ui-nodisc-icon {
+	height:7.5vh; 
+	padding-top: 4.75vh;
+}
+
+ .ui-icon-schoolicon:after {
+    background-image: url("../img/icon/schoolicon.svg");
+    padding-top: .5vh;
+        }
+
+.ui-icon-plannericon:after {
+    background-image: url("../img/icon/plannericon.svg");
+    padding-top: .5vh;
+        }
+
+.ui-icon-briefcaseicon:after {
+    background-image: url("../img/icon/briefcaseicon.svg");
+    padding-top: .5vh;
+        }
+
+.ui-icon-schooliconactive:after {
+    background-image: url("../img/icon/schooliconactive.svg");
+    padding-top: .5vh;
+        }
+.ui-nodisc-icon .ui-link .ui-btn .ui-icon-schooliconactive .ui-btn-icon-top {
+	color: red;
+}
+
+.ui-icon-plannericonactive:after {
+    background-image: url("../img/icon/plannericonactive.svg");
+    padding-top: .5vh;
+        }
+
+.ui-icon-briefcaseiconactive:after {
+    background-image: url("../img/icon/briefcaseiconactive.svg");
+    padding-top: .5vh;
+        }
+
+a#activeicon.ui-nodisc-icon.ui-link.ui-btn.ui-icon-schooliconactive.ui-btn-icon-top{
+	color: #219aab;
+}
