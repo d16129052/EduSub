@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>EduSub Mobile</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--jQuery CDN Hosted Files-->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <!--2AM Creations CSS Stylesheet-->
+    <link rel="stylesheet" href="css/main.css" />
+
+
+</head>
+
+<body>
+	
+    <!------TEACHER PAGES-------------------------------------------------------------->
+
+
+    <!--Page 1 Search for Jobs-->
+    <div data-role="page" id="page1">
+        
+        
+        <!-- Subheader --> 
+        <div data-role="header" class="subheader" data-position="fixed">
+            <a href="#" class="ui-btn-right">Filter</a>
+            <div class="subheadertext">Available job opportunities...</div>
+        </div>
+
+        <!-- Body -->
+        <div id="schoolpositions">
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#">
+                        <img src="img/colaistechiaran.jpg">
+                    <h2>Cholaiste Chiaran</h2>
+                    <p><strong>Leixlip, Kildare</strong></p>
+                    <p>Geography &amp; History Teacher Wanted</p></a>
+                </li>
+                <li><a href="#">
+                        <img src="img/confeycollege.jpg">
+                    <h1>Confey Community College</h1>
+                    <p><strong>Leixlip, Kildare</strong></p>
+                    <p>Maths &amp; P.E. Teacher Wanted</p></a>
+                </li>
+                <li><a href="#">
+                        <img src="img/scoilsancarlo.jpg">
+                    <h2>Scoil San Carlo National School</h2>
+                    <p><strong>Leixlip, Kildare</strong></p>
+                    <p>Junior Infants Teacher Wanted</p></a>
+                </li>
+                <li><a href="#">
+                        <img src="img/colaistechiaran.jpg">
+                    <h2>Cholaiste Chiaran</h2>
+                    <p><strong>Leixlip, Kildare</strong></p>
+                    <p>Geography &amp; History Teacher Wanted</p></a>
+                </li>
+                <li><a href="#">
+                        <img src="img/confeycollege.jpg">
+                    <h1>Confey Community College</h1>
+                    <p><strong>Leixlip, Kildare</strong></p>
+                    <p>Maths &amp; P.E. Teacher Wanted</p></a>
+                </li>
+                <li><a href="#">
+                        <img src="img/scoilsancarlo.jpg">
+                    <h2>Scoil San Carlo National School</h2>
+                    <p><strong>Leixlip, Kildare</strong></p>
+                    <p>Junior Infants Teacher Wanted</p></a>
+                </li>
+                <li><a href="#">
+                        <img src="img/colaistechiaran.jpg">
+                    <h2>Cholaiste Chiaran</h2>
+                    <p><strong>Leixlip, Kildare</strong></p>
+                    <p>Geography &amp; History Teacher Wanted</p></a>
+                </li>
+                <li><a href="#">
+                        <img src="img/confeycollege.jpg">
+                    <h1>Confey Community College</h1>
+                    <p><strong>Leixlip, Kildare</strong></p>
+                    <p>Maths &amp; P.E. Teacher Wanted</p></a>
+                </li>
+                <li><a href="#">
+                        <img src="img/scoilsancarlo.jpg">
+                    <h2>Scoil San Carlo National School</h2>
+                    <p><strong>Leixlip, Kildare</strong></p>
+                    <p>Junior Infants Teacher Wanted</p></a>
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- Header -->
+
+        <div data-role="header" class="header" data-position="fixed">
+            <a href="#page4" class="ui-btn-right" data-icon="user" >Profile</a>EduSub Teacher
+        </div>
+
+        <!-- Footer -->
+        <div data-role="footer" id="footer" data-id="footer" data-position="fixed"">
+            <div data-role="navbar" class="footernavbar">
+                <ul>
+                    <li><a class="ui-nodisc-icon" id="activeicon" href="#page1" data-icon="schooliconactive">Search</a></li>
+                    <li><a class="ui-nodisc-icon" href="#page2" data-icon="plannericon">Planner</a></li>
+                    <li><a class="ui-nodisc-icon" href="#page3" data-icon="briefcaseicon">Jobs</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+
+    <!--Page 2 This is your Planner-->
+    <div data-role="page" id="page2">
+
+        <div data-role="header" class="header" data-position="fixed">
+            <a href="#page4" class="ui-btn-right">Profile</a>EduSub Teacher
+        </div>
+        <div data-role="header" class="subheader" data-position="fixed">
+            <div class="subheadertext">Select date for more information</div>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <h1>Google Calendar API</h1>
+            <p>Welcome to the planner page</p>
+        </div>
+
+        <div data-role="footer" class="edusubfooter">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page1">Search</a></li>
+                    <li><a href="#page2">Planner</a></li>
+                    <li><a href="#page3">Jobs</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Page 3 My Jobs Summary-->
+    <div data-role="page" id="page3">
+
+        <div data-role="header" class="header">
+            <a href="#page4" class="ui-btn-right">Profile</a>EduSub Teacher
+        </div>
+
+        <div data-role="navbar" class="subnavbar">
+            <ul>
+                <li><a href="#page3.1">Scheduled</a></li>
+                <li><a href="#page3.2">Pending</a></li>
+                <li><a href="#page3.3">History</a></li>
+            </ul>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <h1>This is where you view your jobs</h1>
+            <p>Welcome to the jobs page</p>
+        </div>
+
+        <div data-role="footer" class="edusubfooter">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page1">Search</a></li>
+                    <li><a href="#page2">Planner</a></li>
+                    <li><a href="#page3">Jobs</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Page 3.1 Scheduled-->
+    <div data-role="page" id="page3.1">
+
+        <div data-role="header" class="header">
+            <a href="#page4" class="ui-btn-right">Profile</a>EduSub Teacher
+        </div>
+
+        <div data-role="navbar" class="subnavbar">
+            <ul>
+                <li><a href="#page3.1">Scheduled</a></li>
+                <li><a href="#page3.2">Pending</a></li>
+                <li><a href="#page3.3">History</a></li>
+            </ul>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <h1>Scheduled</h1>
+            <p>Example</p>
+        </div>
+
+        <div data-role="footer" class="edusubfooter">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page1">Search</a></li>
+                    <li><a href="#page2">Planner</a></li>
+                    <li><a href="#page3">Jobs</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Page 3.2 Requested-->
+    <div data-role="page" id="page3.2">
+
+        <div data-role="header" class="header">
+            <a href="#page4" class="ui-btn-right">Profile</a>EduSub Teacher
+        </div>
+
+        <div data-role="navbar" class="subnavbar">
+            <ul>
+                <li><a href="#page3.1">Scheduled</a></li>
+                <li><a href="#page3.2">Pending</a></li>
+                <li><a href="#page3.3">History</a></li>
+            </ul>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <h1>Requested</h1>
+            <p>Example</p>
+        </div>
+
+        <div data-role="footer" class="edusubfooter">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page1">Search</a></li>
+                    <li><a href="#page2">Planner</a></li>
+                    <li><a href="#page3">Jobs</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Page 3.3 History-->
+    <div data-role="page" id="page3.3">
+
+        <div data-role="header" class="header">
+            <a href="#page4" class="ui-btn-right">Profile</a>EduSub Teacher
+        </div>
+
+        <div data-role="navbar" class="subnavbar">
+            <ul>
+                <li><a href="#page3.1">Scheduled</a></li>
+                <li><a href="#page3.2">Pending</a></li>
+                <li><a href="#page3.3">History</a></li>
+            </ul>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <h1>History</h1>
+            <p>Example</p>
+        </div>
+
+        <div data-role="footer" class="edusubfooter">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page1">Search</a></li>
+                    <li><a href="#page2">Planner</a></li>
+                    <li><a href="#page3">Jobs</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--Page 4 My Profile-->
+    <div data-role="page" id="page4">
+        <div data-role="header" class="header">EduSub Teacher
+            <a href="#" data-rel="back" class="ui-btn-left ">Back</a>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <h1>This is where you view your profile</h1>
+        </div>
+
+        <a href="#pagelogin" class="ui-btn">Log Out</a>
+
+        <div data-role="footer" class="edusubfooter">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page1">Search</a></li>
+                    <li><a href="#page2">Planner</a></li>
+                    <li><a href="#page3">Jobs</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+	
+</body>
