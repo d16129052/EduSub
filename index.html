@@ -27,16 +27,14 @@
     <!--Page 1 Search for Jobs-->
     <div data-role="page" id="page1">
         
-        <div data-role="header" class="header" data-position="fixed">
-            <a href="#page4" class="ui-btn-right">Profile</a>EduSub Teacher
-        </div>
         
+        <!-- Subheader --> 
         <div data-role="header" class="subheader" data-position="fixed">
             <a href="#" class="ui-btn-right">Filter</a>
             <div class="subheadertext">Available job opportunities...</div>
         </div>
 
-
+        <!-- Body -->
         <div id="schoolpositions">
             <ul data-role="listview" data-inset="true">
                 <li><a href="#">
@@ -97,14 +95,27 @@
             </ul>
         </div>
 
-        <div data-role="navbar" class="edusubfooter">
-            <ul>
-                <li><a href="#page1">Search</a></li>
-                <li><a href="#page2">Planner</a></li>
-                <li><a href="#page3">Jobs</a></li>
-            </ul>
+        <!-- Header -->
+
+        <div data-role="header" class="header" data-position="fixed">
+            <a href="#page4" class="ui-btn-right" data-icon="user" >Profile</a>EduSub Teacher
         </div>
+
+        <!-- Footer -->
+        <div data-role="footer" id="footer" data-id="footer" data-position="fixed"">
+            <div data-role="navbar" class="footernavbar">
+                <ul>
+                    <li><a class="ui-nodisc-icon" id="activeicon" href="#page1" data-icon="schooliconactive">Search</a></li>
+                    <li><a class="ui-nodisc-icon" href="#page2" data-icon="plannericon">Planner</a></li>
+                    <li><a class="ui-nodisc-icon" href="#page3" data-icon="briefcaseicon">Jobs</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
     </div>
+</body>
 
 
     <!--Page 2 This is your Planner-->
