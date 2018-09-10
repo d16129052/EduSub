@@ -2,8 +2,8 @@
 
 * {
     font-family: helvetica neue;
+    text-shadow: none;
 }
-
 
 
 /* TEACHER SEARCH SECTION */
@@ -18,8 +18,6 @@
     line-height: 40px;
     height: 44px;
     box-shadow: 0 0 20px 0px #00000042;
-
-
 }
 
 .header .h1 {
@@ -36,8 +34,7 @@
     text-shadow: none;
 }
 
-
-.ui-btn-right.ui-link.ui-btn.ui-icon-user.ui-btn-icon-left.ui-shadow.ui-corner-all {
+.ui-btn-left.ui-link.ui-btn.ui-icon-user.ui-btn-icon-left.ui-shadow.ui-corner-all {
     color: #fff;
     text-shadow:  none;
     background-color: #219aab;
@@ -78,6 +75,42 @@
     border-color: #219aab;
 }
 
+/* Subheader Filter Panel */
+
+#filterPanel {
+    background-color: #99c5cc;
+    color: white;
+    text-shadow: none;
+}
+
+.ui-panel-dismiss-open {
+    background: black;
+    transition: 2s ease-in;
+    opacity: 0.4;
+}
+
+.filterHeader {
+    text-align: center;
+}
+
+#filterClose {
+    text-shadow: none;
+    color: #eee;
+    background: #00000026;
+    border: none;
+}
+
+#filterApply {
+    width: 15vh;
+    margin-top: 4vh;
+    text-shadow: none;
+    color: white;
+    background: #53a053;
+    border: none;
+    box-shadow: 0em 0em 0em 0.15em;
+}
+
+
 
 
 /* Body */
@@ -102,7 +135,6 @@
     width: 100%;
     text-align: center;
     box-shadow: 0 0 20px 0px #00000042;
-
 }
 
 .ui-nodisc-icon {
@@ -129,9 +161,6 @@
     background-image: url("../img/icon/schooliconactive.svg");
     padding-top: .5vh;
         }
-.ui-nodisc-icon .ui-link .ui-btn .ui-icon-schooliconactive .ui-btn-icon-top {
-	color: red;
-}
 
 .ui-icon-plannericonactive:after {
     background-image: url("../img/icon/plannericonactive.svg");
@@ -142,6 +171,18 @@
     background-image: url("../img/icon/briefcaseiconactive.svg");
     padding-top: .5vh;
         }
+
+.ui-nodisc-icon.ui-link.ui-btn.ui-icon-schoolicon.ui-btn-icon-top {
+    border:none;
+}
+
+.ui-nodisc-icon.ui-link.ui-btn.ui-icon-briefcaseicon.ui-btn-icon-top {
+    border:none;
+}
+
+.ui-nodisc-icon.ui-link.ui-btn.ui-icon-plannericon.ui-btn-icon-top {
+    border:none;
+}
 
 a#activeicon.ui-nodisc-icon.ui-link.ui-btn.ui-icon-schooliconactive.ui-btn-icon-top{
 	color: #219aab;

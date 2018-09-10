@@ -27,9 +27,40 @@
         
         <!-- Subheader --> 
         <div data-role="header" class="subheader" data-position="fixed">
-            <a href="#" class="ui-btn-right">Filter</a>
+            <a href="#filterPanel" class="ui-btn-right" >Filter</a>
             <div class="subheadertext">Available job opportunities...</div>
         </div>
+
+            <!-- Subheader Filter Panel -->
+            <div data-role="panel" id="filterPanel" data-display="overlay" data-position="right">
+                <h1 class="filterHeader">FILTER</h1>
+
+                <a data-rel="" id="filterClose" class="ui-btn ui-shadow ui-corner-all ui-btn-inline">Clear</a>
+
+                <fieldset data-role="controlgroup">
+                    <legend>Only show results from:</legend>
+                    <input type="checkbox" name="checkbox-levela" id="checkbox-levela">
+                    <label for="checkbox-levela">Primary Schools</label>
+                    <input type="checkbox" name="checkbox-levelb" id="checkbox-levelab">
+                    <label for="checkbox-levelab">Secondary Schools</label>
+                </fieldset>
+
+                <fieldset data-role="controlgroup">
+                    <legend>Located in:</legend>
+                    <input type="checkbox" name="checkbox-locationa" id="checkbox-locationa">
+                    <label for="checkbox-locationa">Leinster</label>
+                    <input type="checkbox" name="checkbox-locationb" id="checkbox-locationb">
+                    <label for="checkbox-locationb">Connacht</label>
+                    <input type="checkbox" name="checkbox-locationc" id="checkbox-locationc">
+                    <label for="checkbox-locationc">Ulster</label>
+                    <input type="checkbox" name="checkbox-locationd" id="checkbox-locationd">
+                    <label for="checkbox-locationd">Munster</label>
+                </fieldset>
+
+                <a data-rel="close" id="filterApply" class="ui-btn ui-shadow ui-corner-all ui-btn-inline">Apply</a>
+
+            </div>
+
 
         <!-- Body -->
         <div id="schoolpositions">
@@ -95,7 +126,7 @@
         <!-- Header -->
 
         <div data-role="header" class="header" data-position="fixed">
-            <a href="#page4" class="ui-btn-right" data-icon="user" >Profile</a>EduSub Teacher
+            <a href="#page4" class="ui-btn-left" data-icon="user" >Profile</a>EduSub Teacher
         </div>
 
         <!-- Footer -->
