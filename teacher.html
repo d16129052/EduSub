@@ -294,7 +294,7 @@
 
         <!-- Header -->
         <div data-role="header" class="header" data-position="fixed">
-            <a href="#" data-rel="back" data-icon="arrow-l" class="ui-btn-left">Back</a>PROFILE
+            <a href="#" data-rel="back" data-icon="arrow-l" class="ui-btn-left">Back</a>Profile
         </div>
     </div>
 
@@ -349,12 +349,27 @@
                 Teacher wanted to sub for the day. Curriculum will be outlined by the absent teacher. Full pay in accordance with the Dept. of Education.
             </h2>
         </div>
-
-        <div>
-            <a href="mailto:edusubapp@gmail.com" data-icon="mail" data-iconpos="notext" data-role="button"></a>
-            <a href="tel:+353879841626" data-icon="phone" data-iconpos="notext" data-role="button"></a>
-            <a href="#" data-iconpos="notext" data-role="button">REQUEST</a>
-        </div>
+        
+        <!-- Contact Buttons -->
+        <div class="contactbuttons 
+        ">
+            <a href="mailto:edusubapp@gmail.com" id="schoolmail" class="ui-btn ui-shadow ui-corner-all ui-icon-mail ui-btn-icon-notext ui-btn-b ui-btn-inline">Mail</a>
+            <a href="tel:+353879841626" id="schoolphone" class="ui-btn ui-shadow ui-corner-all ui-icon-phone ui-btn-icon-notext ui-btn-b ui-btn-inline">Phone</a>
+            
+            <!-- Request position -->
+            <a href="#requestButton" id="schoolrequest" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-none ui-btn-b">Request</a>
+                
+                <div data-role="popup" id="requestButton" data-dismissible="false" style="max-width:100vh;">
+                    <div data-role="header" data-theme="a">
+                    <h1>Are you sure?</h1>
+                    </div>
+                    <div role="main" id="requestButtonContent" class="ui-content">
+                        <h3 class="ui-title">Are you sure you want to request this position?</h3>
+                    <p2>An alert will be sent to the school notifying them of your request.</p2>
+                        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+                        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back" data-transition="flow">Yes</a>
+                    </div>
+                </div>
 
         <!-- Header -->
         <div data-role="header" class="header" data-position="fixed">
