@@ -49,7 +49,11 @@
                 <a data-rel="close" id="filterApply" class="ui-btn ui-shadow ui-corner-all ui-btn-inline">Apply</a>
 
             </div>
+  <!-- Add Job "+"" Icon -->
 
+        
+                <button id="myBtn">+</button>
+               
 
         <!-- Body -->
         <div id="teachersavailable">
@@ -113,35 +117,18 @@
 
 
             </ul>
+             <!-- Add Job "+"" Icon -->
+
+        
+                <a href="#jobForm" id="myBtn" data-transition="slidefade">+</a>
+               
+
         </div>
 
 
-        <!-- Add Job "+"" Icon -->
-
-              <!-- Trigger/Open The Modal -->
-                <button id="myBtn">+</button>
-                <!-- The Modal -->
-                <div id="myModal" class="modal">
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <form action="includes/signup.inc.php" method="post">
-                            <span class="close">&times;</span>
-                            <br>
-                            <br>
-                            <input type="text" name="first" placeholder="Firstname">
-                            <br>
-                            <input type="text" name="last" placeholder="Lastname">
-                            <br>
-                            <input type="text" name="email" placeholder="E-mail">
-                            <br>
-                            <input type="text" name="uid" placeholder="Username">
-                            <br>
-                            <input type="password" name="pwd" placeholder="Password">
-                            <br>
-                            <button type="submit" name="submit" class="buttonPost">Post Job</button>
-                        </form>
-                    </div>
-                </div>
+      
+               
+             
 
         <!-- Header -->
 
@@ -150,7 +137,7 @@
         </div>
 
         <!-- Footer -->
-        <div data-role="footer" id="footer" data-id="footer" data-position="fixed"">
+        <div data-role="footer" id="footer" data-id="footer" data-position="fixed">
             <div data-role="navbar" class="footernavbar">
                 <ul>
                     <li><a class="ui-nodisc-icon" id="activeicon" href="#school1" data-icon="schooliconactive">Search</a></li>
@@ -161,6 +148,35 @@
         </div>
     </div>
 
+<!-------Job Form------------------------------------------------------------>
+    <div data-role="page" id="jobForm">
+
+        <!-- Subheader --> 
+        <div data-role="header" class="subheader" data-position="fixed">
+            <div class="subheadertext">job form</div>
+        </div>
+        
+        <!-- Body -->
+        <div data-role="main" class="ui-content">
+           
+        </div>
+
+        <!-- Header -->
+        <div data-role="header" class="header" data-position="fixed">
+            <a href="#school4" class="ui-btn-left" data-icon="user" >Profile</a>EduSub School
+        </div>
+        
+        <!-- Footer -->
+        <div data-role="footer" id="footer" data-id="footer" data-position="fixed">
+            <div data-role="navbar" class="footernavbar">
+                <ul>
+                    <li><a class="ui-nodisc-icon" href="#school1" data-icon="schoolicon">Search</a></li>
+                    <li><a class="ui-nodisc-icon" id="activeicon" href="#school2" data-icon="plannericonactive">Planner</a></li>
+                    <li><a class="ui-nodisc-icon" href="#school3.1" data-icon="briefcaseicon">Jobs</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
 <!-------Page 2 Planner------------------------------------------------------------>
     <div data-role="page" id="school2">
@@ -181,7 +197,7 @@
         </div>
         
         <!-- Footer -->
-        <div data-role="footer" id="footer" data-id="footer" data-position="fixed"">
+        <div data-role="footer" id="footer" data-id="footer" data-position="fixed">
             <div data-role="navbar" class="footernavbar">
                 <ul>
                     <li><a class="ui-nodisc-icon" href="#school1" data-icon="schoolicon">Search</a></li>
@@ -217,7 +233,7 @@
         </div>
         
         <!-- Footer -->
-        <div data-role="footer" id="footer" data-id="footer" data-position="fixed"">
+        <div data-role="footer" id="footer" data-id="footer" data-position="fixed">
             <div data-role="navbar" class="footernavbar">
                 <ul>
                     <li><a class="ui-nodisc-icon" href="#school1" data-icon="schoolicon">Search</a></li>
@@ -252,7 +268,7 @@
         </div>
         
         <!-- Footer -->
-        <div data-role="footer" id="footer" data-id="footer" data-position="fixed"">
+        <div data-role="footer" id="footer" data-id="footer" data-position="fixed">
             <div data-role="navbar" class="footernavbar">
                 <ul>
                     <li><a class="ui-nodisc-icon" href="#school1" data-icon="schoolicon">Search</a></li>
@@ -287,7 +303,7 @@
         </div>
         
         <!-- Footer -->
-        <div data-role="footer" id="footer" data-id="footer" data-position="fixed"">
+        <div data-role="footer" id="footer" data-id="footer" data-position="fixed">
             <div data-role="navbar" class="footernavbar">
                 <ul>
                     <li><a class="ui-nodisc-icon" href="#school1" data-icon="schoolicon">Search</a></li>
@@ -332,7 +348,7 @@
         </div>
         
         <!-- Footer -->
-        <div data-role="footer" id="footer" data-id="footer" data-position="fixed"">
+        <div data-role="footer" id="footer" data-id="footer" data-position="fixed">
             <div data-role="navbar" class="footernavbar">
                 <ul>
                     <li><a class="ui-nodisc-icon" id="activeicon" href="#school1" data-icon="schooliconactive">Search</a></li>
@@ -350,5 +366,5 @@
 
 
         
-    </div>
+    
 </body>
