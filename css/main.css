@@ -363,9 +363,11 @@ a.ui-btn-left.ui-link.ui-btn.ui-icon-arrow-l.ui-btn-icon-left.ui-shadow.ui-corne
 
     /* This is controlled from the Teacher section of this CSS file */
 
+
 /* S1.02 - Subheader Filter Panel */
 
     /* This is controlled from the Teacher section of this CSS file */
+
 
 /* S1.03 - Body */
 
@@ -377,7 +379,83 @@ a.ui-btn-left.ui-link.ui-btn.ui-icon-arrow-l.ui-btn-icon-left.ui-shadow.ui-corne
     background-color: #219aab;
 }
 
+    /* Floating + Button */
+    .modal-content .buttonPost  {
+    background-color: #4CAF50; 
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    font-weight: normal;
+    color: white;
+    display: inline-block;
+    font-size: 18px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 2px;
+    
+}
 
+
+#myBtn{
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  bottom: 50px;
+  right: 30px;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px #666;
+  position: absolute;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  line-height: 55px;
+  font-size: 28px;
+  font-family: 'Roboto';
+ 
+}
+
+input {
+    width: 100%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 13px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 
 /* S2 - PAGE 2 PLANNER */

@@ -115,6 +115,34 @@
             </ul>
         </div>
 
+
+        <!-- Add Job "+"" Icon -->
+
+              <!-- Trigger/Open The Modal -->
+                <button id="myBtn">+</button>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <form action="includes/signup.inc.php" method="post">
+                            <span class="close">&times;</span>
+                            <br>
+                            <br>
+                            <input type="text" name="first" placeholder="Firstname">
+                            <br>
+                            <input type="text" name="last" placeholder="Lastname">
+                            <br>
+                            <input type="text" name="email" placeholder="E-mail">
+                            <br>
+                            <input type="text" name="uid" placeholder="Username">
+                            <br>
+                            <input type="password" name="pwd" placeholder="Password">
+                            <br>
+                            <button type="submit" name="submit" class="buttonPost">Post Job</button>
+                        </form>
+                    </div>
+                </div>
+
         <!-- Header -->
 
         <div data-role="header" class="header" data-position="fixed">
