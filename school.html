@@ -19,23 +19,43 @@
 </head>
 
 <body>
-	
+    
 <!------SCHOOL PAGES-------------------------------------------------------------->
 
-    <!--Page 1-->
+
+<!--Page 1 Search for Teachers--------------------------------------------------------->
     <div data-role="page" id="school1">
-        <div data-role="header" class="header" data-position="fixed">
-            <a href="#school4" class="ui-btn-right">Profile</a>EduSub School
-        </div>
+        
+        <!-- Subheader --> 
         <div data-role="header" class="subheader" data-position="fixed">
-            <a href="#" class="ui-btn-right">Filter</a>
-            <div class="subheadertext">Available teachers are listed below...</div>
+            <a href="#filterPanel" class="ui-btn-right" >Filter</a>
+            <div class="subheadertext">Available teachers...</div>
         </div>
 
-        <div id="teachersavailabe">
+            <!-- Subheader Filter Panel -->
+            <div data-role="panel" id="filterPanel" data-display="overlay" data-position="right">
+                <h1 class="filterHeader">FILTER</h1>
+
+                <a data-rel="" id="filterClose" class="ui-btn ui-shadow ui-corner-all ui-btn-inline">Clear</a>
+
+                <fieldset data-role="controlgroup">
+                    <legend>Only show:</legend>
+                    <input type="checkbox" name="checkbox-levela" id="checkbox-levela">
+                    <label for="checkbox-levela">Primary Teachers</label>
+                    <input type="checkbox" name="checkbox-levelb" id="checkbox-levelab">
+                    <label for="checkbox-levelab">Secondary Teachers</label>
+                </fieldset>
+
+                <a data-rel="close" id="filterApply" class="ui-btn ui-shadow ui-corner-all ui-btn-inline">Apply</a>
+
+            </div>
+
+
+        <!-- Body -->
+        <div id="teachersavailable">
             <ul data-role="listview" data-inset="true">
                 <li>
-                    <a href="#">
+                    <a href="#school5" data-transition="slide">
                         <h2>Jane O'Connor</h2>
                         <p><strong>Primary School Teacher</strong></p>
                         <p>10 September - 17 September</p>
@@ -80,7 +100,7 @@
                     <a href="#">
                         <h2>Sarah Neil</h2>
                         <p><strong>Secondary School Teacher</strong></p>
-                        <p>123 September - 30 September</p>
+                        <p>23 September - 30 September</p>
                     </a>
                 </li>
                 <li>
@@ -95,180 +115,212 @@
             </ul>
         </div>
 
-        <div data-role="navbar" class="edusubfooter">
-            <ul>
-                <li><a href="#school1">Search</a></li>
-                <li><a href="#school2">Planner</a></li>
-                <li><a href="#school3.1">Job Posts</a></li>
-            </ul>
+        <!-- Header -->
+
+        <div data-role="header" class="header" data-position="fixed">
+            <a href="#school4" class="ui-btn-left" data-icon="user" >Profile</a>EduSub School
+        </div>
+
+        <!-- Footer -->
+        <div data-role="footer" id="footer" data-id="footer" data-position="fixed"">
+            <div data-role="navbar" class="footernavbar">
+                <ul>
+                    <li><a class="ui-nodisc-icon" id="activeicon" href="#school1" data-icon="schooliconactive">Search</a></li>
+                    <li><a class="ui-nodisc-icon" href="#school2" data-icon="plannericon">Planner</a></li>
+                    <li><a class="ui-nodisc-icon" href="#school3.1" data-icon="briefcaseicon">Jobs</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
-    <!--Page 2 This is school's planner-->
+
+<!-------Page 2 Planner------------------------------------------------------------>
     <div data-role="page" id="school2">
 
-        <div data-role="header" class="header" data-position="fixed">
-            <a href="#school4" class="ui-btn-right">Profile</a>EduSub School
-        </div>
+        <!-- Subheader --> 
         <div data-role="header" class="subheader" data-position="fixed">
             <div class="subheadertext">Select date for more information</div>
         </div>
-
+        
+        <!-- Body -->
         <div data-role="main" class="ui-content">
-            <h1>Google Calendar API</h1>
-            <p>Welcome to the planner page</p>
+           
         </div>
 
-        <div data-role="footer" class="edusubfooter">
-            <div data-role="navbar">
+        <!-- Header -->
+        <div data-role="header" class="header" data-position="fixed">
+            <a href="#school4" class="ui-btn-left" data-icon="user" >Profile</a>EduSub School
+        </div>
+        
+        <!-- Footer -->
+        <div data-role="footer" id="footer" data-id="footer" data-position="fixed"">
+            <div data-role="navbar" class="footernavbar">
                 <ul>
-                    <li><a href="#school1">Search</a></li>
-                    <li><a href="#school2">Planner</a></li>
-                    <li><a href="#school3.1">Job Posts</a></li>
+                    <li><a class="ui-nodisc-icon" href="#school1" data-icon="schoolicon">Search</a></li>
+                    <li><a class="ui-nodisc-icon" id="activeicon" href="#school2" data-icon="plannericonactive">Planner</a></li>
+                    <li><a class="ui-nodisc-icon" href="#school3.1" data-icon="briefcaseicon">Jobs</a></li>
                 </ul>
             </div>
         </div>
-
     </div>
 
 
-    <!--Page 3.1 Schools Live Jobs -->
+<!-------Page 3.1 Jobs Scheduled----------------------------------------------------->
     <div data-role="page" id="school3.1">
 
-        <div data-role="header" class="header">
-            <a href="#school4" class="ui-btn-right">Profile</a>EduSub School
-        </div>
-
-        <div data-role="navbar" class="subnavbar">
+        <!-- Subheader -->
+        <div data-role="navbar" class="subnavbar" data-position="fixed">
             <ul>
-                <li><a href="#school3.1">Live Job Posts</a></li>
+                <li><a href="#school3.1">Live Jobs</a></li>
                 <li><a href="#school3.2">Requests</a></li>
                 <li><a href="#school3.3">History</a></li>
             </ul>
         </div>
-
-        <div id="schoolpositions">
-            <ul data-role="listview" data-inset="true">
-                <li><a href="#">
-                    <img src="img/confeycollege.jpg">
-                <h2>Confey Community College</h2>
-                <p><strong>Leixlip, Kildare</strong></p>
-                <p>Geography &amp; History Teacher Wanted</p></a>
-                </li>
-                <li><a href="#">
-                    <img src="img/confeycollege.jpg">
-                <h1>Confey Community College</h1>
-                <p><strong>Leixlip, Kildare</strong></p>
-                <p>Maths &amp; P.E. Teacher Wanted</p></a>
-                </li>
-
-            </ul>
-        </div>
-
-        <div data-role="footer" class="edusubfooter">
-            <div data-role="navbar">
-                <ul>
-                    <li><a href="#school1">Search</a></li>
-                    <li><a href="#school2">Planner</a></li>
-                    <li><a href="#school3.1">Job Posts</a></li>
-                </ul>
-            </div>
-        </div>
-
-    </div>
-
-    <!--Page 3.2 Job Requests-->
-    <div data-role="page" id="school3.2">
-
-        <div data-role="header" class="header">
-            <a href="#page4" class="ui-btn-right">Profile</a>EduSub School
-        </div>
-
-        <div data-role="navbar" class="subnavbar">
-            <ul>
-                <li><a href="#school3.1">Live Job Posts</a></li>
-                <li><a href="#school3.2">Requests</a></li>
-                <li><a href="#school3.3">History</a></li>
-            </ul>
-        </div>
-
+        
+        <!-- Body -->
         <div data-role="main" class="ui-content">
-            <h1>Requested</h1>
+            <h1>Live</h1>
             <p>Example</p>
         </div>
 
-        <div data-role="footer" class="edusubfooter">
-            <div data-role="navbar">
+        <!-- Header -->
+        <div data-role="header" class="header" data-position="fixed">
+            <a href="#school4" class="ui-btn-left" data-icon="user" >Profile</a>EduSub School
+        </div>
+        
+        <!-- Footer -->
+        <div data-role="footer" id="footer" data-id="footer" data-position="fixed"">
+            <div data-role="navbar" class="footernavbar">
                 <ul>
-                    <li><a href="#school1">Search</a></li>
-                    <li><a href="#school2">Planner</a></li>
-                    <li><a href="#school3.1">Job Posts</a></li>
+                    <li><a class="ui-nodisc-icon" href="#school1" data-icon="schoolicon">Search</a></li>
+                    <li><a class="ui-nodisc-icon" href="#school2" data-icon="plannericon">Planner</a></li>
+                    <li><a class="ui-nodisc-icon" id="activeicon" href="#school3.1" data-icon="briefcaseiconactive">Jobs</a></li>
                 </ul>
             </div>
         </div>
-
     </div>
 
-    <!--Page 3.3 History-->
-    <div data-role="page" id="school3.3">
+<!-------Page 3.2 Jobs Pending----------------------------------------------------->
+    <div data-role="page" id="school3.2">
 
-        <div data-role="header" class="header">
-            <a href="#school4" class="ui-btn-right">Profile</a>EduSub School
-        </div>
-
-        <div data-role="navbar" class="subnavbar">
+        <!-- Subheader -->
+        <div data-role="navbar" class="subnavbar" data-position="fixed">
             <ul>
-                <li><a href="#school3.1">Live Job Posts</a></li>
+                <li><a href="#school3.1">Live Jobs</a></li>
                 <li><a href="#school3.2">Requests</a></li>
                 <li><a href="#school3.3">History</a></li>
             </ul>
         </div>
+        
+        <!-- Body -->
+        <div data-role="main" class="ui-content">
+            <h1>Requests</h1>
+            <p>Example</p>
+        </div>
 
+        <!-- Header -->
+        <div data-role="header" class="header" data-position="fixed">
+            <a href="#school4" class="ui-btn-left" data-icon="user" >Profile</a>EduSub School
+        </div>
+        
+        <!-- Footer -->
+        <div data-role="footer" id="footer" data-id="footer" data-position="fixed"">
+            <div data-role="navbar" class="footernavbar">
+                <ul>
+                    <li><a class="ui-nodisc-icon" href="#school1" data-icon="schoolicon">Search</a></li>
+                    <li><a class="ui-nodisc-icon" href="#school2" data-icon="plannericon">Planner</a></li>
+                    <li><a class="ui-nodisc-icon" id="activeicon" href="#school3.1" data-icon="briefcaseiconactive">Jobs</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<!-------Page 3.2 Jobs History----------------------------------------------------->
+    <div data-role="page" id="school3.3">
+
+        <!-- Subheader -->
+        <div data-role="navbar" class="subnavbar" data-position="fixed">
+            <ul>
+                <li><a href="#school3.1">Live Jobs</a></li>
+                <li><a href="#school3.2">Requests</a></li>
+                <li><a href="#school3.3">History</a></li>
+            </ul>
+        </div>
+        
+        <!-- Body -->
         <div data-role="main" class="ui-content">
             <h1>History</h1>
             <p>Example</p>
         </div>
 
-        <div data-role="footer" class="edusubfooter">
-            <div data-role="navbar">
+        <!-- Header -->
+        <div data-role="header" class="header" data-position="fixed">
+            <a href="#school4" class="ui-btn-left" data-icon="user" >Profile</a>EduSub School
+        </div>
+        
+        <!-- Footer -->
+        <div data-role="footer" id="footer" data-id="footer" data-position="fixed"">
+            <div data-role="navbar" class="footernavbar">
                 <ul>
-                    <li><a href="#school1">Search</a></li>
-                    <li><a href="#school2">Planner</a></li>
-                    <li><a href="#school3.1">Job Posts</a></li>
+                    <li><a class="ui-nodisc-icon" href="#school1" data-icon="schoolicon">Search</a></li>
+                    <li><a class="ui-nodisc-icon" href="#school2" data-icon="plannericon">Planner</a></li>
+                    <li><a class="ui-nodisc-icon" id="activeicon" href="#school3.1" data-icon="briefcaseiconactive">Jobs</a></li>
                 </ul>
             </div>
         </div>
-
     </div>
 
 
 
-    <!--Page 4 School Profile-->
+<!-------Page 4 Profile Page----------------------------------------------------->
     <div data-role="page" id="school4">
-        <div data-role="header" class="header">EduSub School
-            <a href="#" data-rel="back" class="ui-btn-left ">Back</a>
+
+        
+        
+        <!-- Body -->
+        <div>
+            
         </div>
+        
 
-        <div data-role="main" class="ui-content">
-            <h1>This is where you view the school's profile</h1>
+        <!-- Header -->
+        <div data-role="header" class="header" data-position="fixed">
+            <a href="#" data-rel="back" data-icon="arrow-l" class="ui-btn-left">Back</a>Profile
         </div>
-
-        <a href="#pagelogin" class="ui-btn">Log Out</a>
-
-        <div data-role="footer" class="edusubfooter">
-            <div data-role="navbar">
-                <ul>
-                    <li><a href="#school1">Search</a></li>
-                    <li><a href="#school2">Planner</a></li>
-                    <li><a href="#school3.1">Job Posts</a></li>
-                </ul>
-            </div>
-        </div>
-
     </div>
 
 
 
+<!-------Page 5 Job Post Page------------------------------------------------------------>
+    <div data-role="page" id="school5">
 
-	
+        
+        <!-- Body -->
+
+
+        <!-- Header -->
+        <div data-role="header" class="header" data-position="fixed">
+            <a href="#" data-rel="back" data-icon="arrow-l" class="ui-btn-left" data-transition="slide" data-directions="reverse">Back</a>EduSub School
+        </div>
+        
+        <!-- Footer -->
+        <div data-role="footer" id="footer" data-id="footer" data-position="fixed"">
+            <div data-role="navbar" class="footernavbar">
+                <ul>
+                    <li><a class="ui-nodisc-icon" id="activeicon" href="#school1" data-icon="schooliconactive">Search</a></li>
+                    <li><a class="ui-nodisc-icon" href="#school2" data-icon="plannericon">Planner</a></li>
+                    <li><a class="ui-nodisc-icon" href="#school3.1" data-icon="briefcaseicon">Jobs</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        
+
+
+
+
+
+
+        
+    </div>
 </body>

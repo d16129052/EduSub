@@ -77,6 +77,7 @@ img#loginlogo {
     background-color: #229aab;
     color: white;
     text-shadow: none;
+    font-size: 5vw;
 }
 
 .ui-btn-left.ui-link.ui-btn.ui-icon-user.ui-btn-icon-left.ui-shadow.ui-corner-all {
@@ -96,7 +97,7 @@ img#loginlogo {
     bottom: 0;
     width: 100%;
     text-align: center;
-    box-shadow: 0 0 20px 0px #00000042;
+    box-shadow: 0px 7px 20px 7px #00000042;
         }
 
 .ui-nodisc-icon {
@@ -162,7 +163,7 @@ a#activeicon.ui-nodisc-icon.ui-link.ui-btn.ui-icon-schooliconactive.ui-btn-icon-
     line-height: 40px;
     height: 40px;
     margin-top: 44px;
-    box-shadow: 0 0 20px 0px #00000042;
+    box-shadow: 0px -7px 20px 7px #00000042;
 
 }
 
@@ -250,6 +251,7 @@ a#activeicon.ui-nodisc-icon.ui-link.ui-btn.ui-icon-schooliconactive.ui-btn-icon-
 
 
 
+
 /* T3.2 - PAGE 3.2 PENDING */
 
 
@@ -309,11 +311,39 @@ a.ui-btn-left.ui-link.ui-btn.ui-icon-arrow-l.ui-btn-icon-left.ui-shadow.ui-corne
     margin-top: 2vh;
     margin-left: 10vw;
     margin-right: 10vw;
-
 }
 
 
+.contactbuttons {
+    padding-top: 30vh;
+    text-align: center;
+}
 
+#schoolmail {
+    font-size: 5vh;
+    background-color: #219aab;
+    border: none;
+}
+
+#schoolphone {
+    font-size: 5vh;
+    background-color: #219aab;
+    border: none;
+}
+
+#schoolrequest {
+    background-color: #219aab;
+    border: none;
+    font-size: 3vh;
+}
+
+#requestButtonContent {
+    position: center;
+}
+
+.ui-popup-screen {
+    opacity: .5;
+}
 
 
 
@@ -326,9 +356,77 @@ a.ui-btn-left.ui-link.ui-btn.ui-icon-arrow-l.ui-btn-icon-left.ui-shadow.ui-corne
 /*///////////////////////////////////////////////////
 
 
+/* S1 - PAGE 1 SEARCH PAGE */ 
 
-/* SCHOOL PAGE 1 LIST OF VACANT POSITIONS */
 
-#teachersavailabe {
-    margin-top: 44px;
+/* S1.01 - Subheader */
+
+    /* This is controlled from the Teacher section of this CSS file */
+
+/* S1.02 - Subheader Filter Panel */
+
+    /* This is controlled from the Teacher section of this CSS file */
+
+/* S1.03 - Body */
+
+#teachersavailable {
+    margin-top: 6vh;
 }
+
+.ui-btn-icon-right:after {
+    background-color: #219aab;
+}
+
+
+
+
+/* S2 - PAGE 2 PLANNER */
+
+
+
+
+
+/* S3.1 - PAGE 3.1 Live Jobs */
+
+
+
+
+
+
+/* S3.2 - PAGE 3.2 Requests */
+
+
+
+
+
+
+/* S3.3 - PAGE 3.3 History */
+
+
+
+
+
+/* S4 - PAGE 4 PROFILE */
+
+
+
+
+
+/* S5 - PAGE 5 TEACHER PROFILE PAGE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
