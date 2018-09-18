@@ -49,13 +49,8 @@
                 <a data-rel="close" id="filterApply" class="ui-btn ui-shadow ui-corner-all ui-btn-inline">Apply</a>
 
             </div>
-  <!-- Add Job "+"" Icon -->
 
-        
-                <button id="myBtn">+</button>
-               
-
-        <!-- Body -->
+        <!--- Body -->
         <div id="teachersavailable">
             <ul data-role="listview" data-inset="true">
                 <li>
@@ -114,24 +109,10 @@
                         <p>27 September - 10 October</p>
                     </a>
                 </li>
-
-
             </ul>
-             <!-- Add Job "+"" Icon -->
-
-        
-                <a href="#jobForm" id="myBtn" data-transition="slidefade">+</a>
-               
-
         </div>
 
-
-      
-               
-             
-
         <!-- Header -->
-
         <div data-role="header" class="header" data-position="fixed">
             <a href="#school4" class="ui-btn-left" data-icon="user" >Profile</a>EduSub School
         </div>
@@ -146,6 +127,10 @@
                 </ul>
             </div>
         </div>
+
+        <!-- Add Job "+"" Icon -->
+        <a href="#jobForm" id="myBtn" data-transition="slidefade">+</a>
+    
     </div>
 
 <!-------Job Form------------------------------------------------------------>
@@ -153,25 +138,47 @@
 
         <!-- Subheader --> 
         <div data-role="header" class="subheader" data-position="fixed">
-            <div class="subheadertext">job form</div>
+            <div class="subheadertext">Enter details </div>
         </div>
         
         <!-- Body -->
-        <div data-role="main" class="ui-content">
-           
+        <div data-role="main" id="jobForm" class="ui-content">
+            <form>
+                <label for="text-basic">Title:</label>
+                <input type="text" name="text-basic" id="jobTitle" value="">
+
+                    <label for="Level">Level:</label>
+                    <select name="select-native-1" id="select-native-1">
+                        <option disabled selected>Select one...</option>
+                        <option value="primary">Primary School</option>
+                        <option value="secondary">Secondary School</option>
+                    </select>
+            
+                <label for="date">Date From:</label>
+                <input type="date" name="date" id="dateFrom" value="">
+
+                <label for="date">Date To:</label>
+                <input type="date" name="date" id="dateTo" value="">
+
+                <label for="textarea">Description:</label>
+                <textarea cols="40" rows="8" name="textarea" id="jobDesc"></textarea>
+                
+                <input id="jobFormSubmit" type="submit" value="Submit">
+
+            </form>
         </div>
 
         <!-- Header -->
         <div data-role="header" class="header" data-position="fixed">
-            <a href="#school4" class="ui-btn-left" data-icon="user" >Profile</a>EduSub School
+            <a href="#" data-rel="back" data-icon="arrow-l" class="ui-btn-left" data-directions="reverse">Back</a>New Job Post
         </div>
         
         <!-- Footer -->
         <div data-role="footer" id="footer" data-id="footer" data-position="fixed">
             <div data-role="navbar" class="footernavbar">
-                <ul>
-                    <li><a class="ui-nodisc-icon" href="#school1" data-icon="schoolicon">Search</a></li>
-                    <li><a class="ui-nodisc-icon" id="activeicon" href="#school2" data-icon="plannericonactive">Planner</a></li>
+                <ul> 
+                    <li><a class="ui-nodisc-icon" id="activeicon" href="#school1" data-icon="schooliconactive">Search</a></li>
+                    <li><a class="ui-nodisc-icon"  href="#school2" data-icon="plannericon">Planner</a></li>
                     <li><a class="ui-nodisc-icon" href="#school3.1" data-icon="briefcaseicon">Jobs</a></li>
                 </ul>
             </div>

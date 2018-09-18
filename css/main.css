@@ -77,7 +77,7 @@ img#loginlogo {
     background-color: #229aab;
     color: white;
     text-shadow: none;
-    font-size: 5vw;
+    font-size: 3vh;
 }
 
 .ui-btn-left.ui-link.ui-btn.ui-icon-user.ui-btn-icon-left.ui-shadow.ui-corner-all {
@@ -379,7 +379,7 @@ a.ui-btn-left.ui-link.ui-btn.ui-icon-arrow-l.ui-btn-icon-left.ui-shadow.ui-corne
     background-color: #219aab;
 }
 
-    /* Floating + Button */
+/* Floating + Button */
     .modal-content .buttonPost  {
     background-color: #4CAF50; 
     border: none;
@@ -396,25 +396,32 @@ a.ui-btn-left.ui-link.ui-btn.ui-icon-arrow-l.ui-btn-icon-left.ui-shadow.ui-corne
 
  #myBtn{
   width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  bottom: 70px;
-  right: 30px;
-  cursor: pointer;
-  box-shadow: 0px 2px 5px #666;
-  position: fixed;
-  display: block;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  line-height: 55px;
-  font-size: 28px;
-  font-family: 'Roboto';
+    height: 55px;
+    border-radius: 50%;
+    bottom: 10vh;
+    right: 5vw;
+    box-shadow: 0px 2px 3px 1px #666;
+    position: fixed;
+    text-align: center;
+    line-height: 7.25vh;
+    font-size: 5vh;
+    color: white;
+    background-color: #196b78;
 }
 a:link {
     text-decoration: none;
 }
 
+/* S1 - PAGE JOB FORM */
+
+#jobForm {
+    margin-top: 3.5vh;
+    margin-bottom: 2vh;
+}
+
+textarea#JobDesc.ui-input-text .ui-shadow-inset .ui-body-inherit .ui-corner-all .ui-textinput-autogrow {
+    height: 17.5vh;
+}
 
 /* S2 - PAGE 2 PLANNER */
 
