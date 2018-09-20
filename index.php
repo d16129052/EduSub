@@ -1,3 +1,18 @@
+<?php
+//    date_default_timezone_set('Europe/Dublin');
+//    
+//    echo date_default_timezone_get();
+
+$arrival = new DateTime('Europe/Dublin');
+$arrivalString = $arrival->format("Y-m-d H:i:s");
+
+    include 'includes/dbh.inc.php';
+    
+?>
+
+
+
+
 <!DOCTYPE html>
 <html>
 
@@ -52,6 +67,9 @@
 
         <!--- Body -->
         <div id="teachersavailable">
+            
+             <a href="teacher.php" data-transition="slidefade">Teachers</a>
+    
             <ul data-role="listview" data-inset="true">
                 <li>
                     <a href="#school5" data-transition="slide">
@@ -143,27 +161,39 @@
         
         <!-- Body -->
         <div data-role="main" id="jobForm" class="ui-content">
-            <form>
-                <label for="text-basic">Title:</label>
-                <input type="text" name="text-basic" id="jobTitle" value="">
-
-                    <label for="Level">Level:</label>
-                    <select name="select-native-1" id="select-native-1">
-                        <option disabled selected>Select one...</option>
-                        <option value="primary">Primary School</option>
-                        <option value="secondary">Secondary School</option>
-                    </select>
             
-                <label for="date">Date From:</label>
-                <input type="date" name="date" id="dateFrom" value="">
+            
+            
+                   
+    
+            
+                <form  action="includes/signup.inc.php" method="post">
+                    <input type="hidden" name="schoolID" value="Anon">
+                    <input type="hidden" name="datePosted" value=" <?php echo $arrivalString;?>">
 
-                <label for="date">Date To:</label>
-                <input type="date" name="date" id="dateTo" value="">
+                    <label for="text-basic">Job Title:</label>
+                    <input type="text" name="title" id="jobTitle" value="">
 
-                <label for="textarea">Description:</label>
-                <textarea cols="40" rows="8" name="textarea" id="jobDesc"></textarea>
-                
-                <input id="jobFormSubmit" type="submit" value="Submit">
+                        <label for="Level">Level:</label>
+                        <select name="level" id="select-native-1">
+                            <option disabled selected>Select one...</option>
+                            <option value="primary">Primary School</option>
+                            <option value="secondary">Secondary School</option>
+                        </select>
+
+
+
+                    <label for="date">Date From:</label>
+                    <input type="date" name="dateFrom" id="dateFrom" value="">
+
+                    <label for="date">Date To:</label>
+                    <input type="date" name="dateTo" id="dateTo" value="">
+
+
+                    <label for="textarea">Description:</label>
+                    <textarea cols="40" rows="8" name="description" id="jobDesc"></textarea>
+
+                    <button type="submit" name="sumbit">Submit</button>
 
             </form>
         </div>

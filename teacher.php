@@ -1,3 +1,8 @@
+
+<?php
+    include 'includes/dbh.inc.php';
+    
+?>
 <!DOCTYPE html>
 <html>
 
@@ -61,11 +66,23 @@
                 <a data-rel="close" id="filterApply" class="ui-btn ui-shadow ui-corner-all ui-btn-inline">Apply</a>
 
             </div>
+<br><br><?php
+            function getComments($conn) {
+                $sql = "SELECT * FROM jobs";
+                $result = mysqli_query($conn, $sql);
+                while($row = mysqli_fetch_assoc($result)){
+                  echo "<div class='comment-box'>";
+                   echo $row['userID']."<br>";
+                   
+                 echo "</div>";
+                 }
 
-
+                }
+            getComments($conn);
+?>
         <!-- Body -->
-        <div id="schoolpositions">
-            <ul data-role="listview" data-inset="true">
+       echo " <div id='schoolpositions'>";
+               <ul data-role="listview" data-inset="true">
                 <li><a href="#page5" data-transition="slide">
                         <img src="img/colaistechiaran.jpg">
                     <h2>Cholaiste Chiaran</h2>
