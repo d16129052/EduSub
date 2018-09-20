@@ -473,6 +473,9 @@ textarea#JobDesc.ui-input-text .ui-shadow-inset .ui-body-inherit .ui-corner-all 
     text-shadow: none;
 }
 
+#livelist {
+background-color: #3ae64124;
+    }
 
 
 
@@ -485,7 +488,11 @@ textarea#JobDesc.ui-input-text .ui-shadow-inset .ui-body-inherit .ui-corner-all 
     text-shadow: none;
 }
 
+#requestslist {
+background-color: #fbff4952;
+    }
 
+background-color: #fbff4952;
 
 
 /* S3.3 - PAGE 3.3 History */
@@ -496,6 +503,11 @@ textarea#JobDesc.ui-input-text .ui-shadow-inset .ui-body-inherit .ui-corner-all 
     color: white;
     text-shadow: none;
 }
+
+
+#livelist {
+background-color: #3ae64124;
+    }
 
 
 
