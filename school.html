@@ -216,13 +216,13 @@
     </div>
 
 
-<!-------Page 3.1 Jobs Scheduled----------------------------------------------------->
+<!-------Page 3.1 Live Jobs----------------------------------------------------->
     <div data-role="page" id="school3.1">
 
         <!-- Subheader -->
         <div data-role="navbar" class="subnavbar" data-position="fixed">
             <ul>
-                <li><a href="#school3.1">Live Jobs</a></li>
+                <li><a href="#school3.1"id="activelive" class="ui-btn-active ui-btn-persist">Live Jobs</a></li>
                 <li><a href="#school3.2">Requests</a></li>
                 <li><a href="#school3.3">History</a></li>
             </ul>
@@ -251,14 +251,14 @@
         </div>
     </div>
 
-<!-------Page 3.2 Jobs Pending----------------------------------------------------->
+<!-------Page 3.2 Job Requests----------------------------------------------------->
     <div data-role="page" id="school3.2">
 
         <!-- Subheader -->
         <div data-role="navbar" class="subnavbar" data-position="fixed">
             <ul>
                 <li><a href="#school3.1">Live Jobs</a></li>
-                <li><a href="#school3.2">Requests</a></li>
+                <li><a href="#school3.2"id="activerequests" class="ui-btn-active ui-btn-persist">Requests</a></li>
                 <li><a href="#school3.3">History</a></li>
             </ul>
         </div>
@@ -294,7 +294,7 @@
             <ul>
                 <li><a href="#school3.1">Live Jobs</a></li>
                 <li><a href="#school3.2">Requests</a></li>
-                <li><a href="#school3.3">History</a></li>
+                <li><a href="#school3.3"id="activescheduled" class="ui-btn-active ui-btn-persist">History</a></li>
             </ul>
         </div>
         
@@ -347,6 +347,43 @@
 
         
         <!-- Body -->
+
+        <div class="teacherDetails">
+            <h1>Jane O'Connor</h1>
+            <h2><b>Teaching Council Number:</b><br>
+                7294752<br><br>
+                <b>Level:</b><br>
+                Primary School<br><br>
+                <b>Date Available:</b><br>
+                10 - 18 September 2018<br><br>
+                <b>Location:</b><br>
+                Leixlip, Co. Kildare<br><br>
+                <b>Cirriculum Vitae:</b><br>
+                <a href="pdf/samplecv.pdf" download>Click here to download</a>
+                
+            </h2>
+        </div>
+        
+        <!-- Contact Buttons -->
+        <div class="contactbuttonsteacher 
+        ">
+            <a href="mailto:edusubapp@gmail.com" id="schoolmail" class="ui-btn ui-shadow ui-corner-all ui-icon-mail ui-btn-icon-notext ui-btn-b ui-btn-inline">Mail</a>
+            <a href="tel:+353879841626" id="schoolphone" class="ui-btn ui-shadow ui-corner-all ui-icon-phone ui-btn-icon-notext ui-btn-b ui-btn-inline">Phone</a>
+            
+            <!-- Request position -->
+            <a href="#requestButton" id="schoolrequest" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-none ui-btn-b">Request</a>
+                
+                <div data-role="popup" id="requestButton" data-dismissible="false" style="max-width:100vh;">
+                    <div data-role="header" data-theme="a">
+                    <h1>Are you sure?</h1>
+                    </div>
+                    <div role="main" id="requestButtonContent" class="ui-content">
+                        <h3 class="ui-title">Are you sure you want to request this teacher?</h3>
+                    <p2>An alert will be sent to the teacher notifying them of your request.</p2>
+                        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+                        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back" data-transition="flow">Yes</a>
+                    </div>
+                </div>
 
 
         <!-- Header -->
