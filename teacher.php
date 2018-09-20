@@ -66,35 +66,44 @@
                 <a data-rel="close" id="filterApply" class="ui-btn ui-shadow ui-corner-all ui-btn-inline">Apply</a>
 
             </div>
-<br><br><?php
+<?php
             function getComments($conn) {
                 $sql = "SELECT * FROM jobs";
                 $result = mysqli_query($conn, $sql);
                 while($row = mysqli_fetch_assoc($result)){
-                  echo "<div class='comment-box'>";
-                   echo $row['userID']."<br>";
-                   
-                 echo "</div>";
-                 }
-
+                 
+                    echo " <div id='schoolpositions'>";
+                        echo " <ul data-role='listview' data-inset='true'>";
+                            echo " <li><a href='#page5' data-transition='slide'>";
+                                echo " <img src='img/colaistechiaran.jpg'>";
+                                echo $row['userID'];
+                        echo "</a></li></ul></div>";
+                     
                 }
+            }
             getComments($conn);
 ?>
+        
+        
         <!-- Body -->
-       echo " <div id='schoolpositions'>";
-               <ul data-role="listview" data-inset="true">
-                <li><a href="#page5" data-transition="slide">
-                        <img src="img/colaistechiaran.jpg">
-                    <h2>Cholaiste Chiaran</h2>
-                    <p><strong>Leixlip, Kildare</strong></p>
-                    <p>Geography &amp; History Teacher Wanted</p></a>
-                </li>
-                <li><a href="#">
+      <div id='schoolpositions'>
+             <ul data-role="listview" data-inset="true">
+               <li><a href="#page5" data-transition="slide">
                         <img src="img/confeycollege.jpg">
                     <h1>Confey Community College</h1>
                     <p><strong>Leixlip, Kildare</strong></p>
                     <p>Maths &amp; P.E. Teacher Wanted</p></a>
                 </li>
+                 
+                <li>
+                    <a href="#page5" data-transition="slide">
+                        <h2>Jane O'Connor</h2>
+                        <p><strong>Primary School Teacher</strong></p>
+                        <p>10 September - 17 September</p>
+                    </a>
+                </li>
+                <li>
+                    
                 <li><a href="#">
                         <img src="img/scoilsancarlo.jpg">
                     <h2>Scoil San Carlo National School</h2>
@@ -325,7 +334,11 @@
 
         <!-- Body - Google Maps -->
         <div id="map" data-role="main" class="ui-content">
-                <script>
+                
+            
+            
+            
+            <script>
             // Initialize and add the map
             function initMap() {
               // The location of the school
@@ -345,6 +358,8 @@
               var marker = new google.maps.Marker({position: colaisteChiarain, map: map});
             }
                 </script>
+            
+            
                 <!--Load the API from the specified URL
                 * The async attribute allows the browser to render the page while the API loads
                 * The key parameter will contain your own API key (which is not needed for this tutorial)
@@ -353,6 +368,9 @@
                 <script async defer
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOVjM5TbQis074pESLRehc3PpNBE1sll4&callback=initMap">
                 </script>
+            
+            
+            
                     </div>
 
         <!-- Body - Details -->
@@ -368,8 +386,7 @@
         </div>
         
         <!-- Contact Buttons -->
-        <div class="contactbuttons 
-        ">
+        <div class="contactbuttons">
             <a href="mailto:edusubapp@gmail.com" id="schoolmail" class="ui-btn ui-shadow ui-corner-all ui-icon-mail ui-btn-icon-notext ui-btn-b ui-btn-inline">Mail</a>
             <a href="tel:+353879841626" id="schoolphone" class="ui-btn ui-shadow ui-corner-all ui-icon-phone ui-btn-icon-notext ui-btn-b ui-btn-inline">Phone</a>
             
@@ -405,4 +422,6 @@
         </div>
          
     </div>
+    </div>
 </body>
+</html>
