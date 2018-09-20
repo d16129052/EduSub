@@ -262,6 +262,10 @@ a#activeicon.ui-nodisc-icon.ui-link.ui-btn.ui-icon-plannericonactive.ui-btn-icon
     text-shadow: none;
 }
 
+#scheduledlist  {
+    background-color: #3ae64124;
+}
+
 
 
 
@@ -274,6 +278,10 @@ a#activeicon.ui-nodisc-icon.ui-link.ui-btn.ui-icon-plannericonactive.ui-btn-icon
     text-shadow: none;
 }
 
+#pendinglist {
+    background-color: #fbff4952;
+}
+
 
 
 
@@ -284,6 +292,10 @@ a#activeicon.ui-nodisc-icon.ui-link.ui-btn.ui-icon-plannericonactive.ui-btn-icon
     border: none;
     color: white;
     text-shadow: none;
+}
+
+#historylist {
+    background-color: #a0a0a04f;
 }
 
 
