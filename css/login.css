@@ -13,7 +13,22 @@
   right: 0;
   transform: translateY(-50%);
   z-index: 1;
-  margin-left: 2.2vw;
+  margin-left: 1.4vw;
+  width: 100vw;
+}
+
+#registrationButton {
+  background-color: #4B836E;
+  color: white;
+  text-shadow: none;
+  border: none;
+}
+
+#loginButton {
+  background-color: #5D93CD;
+  color: white;
+  text-shadow: none;
+  border: none;
 }
 
 .landingsliderimg {
@@ -37,3 +52,52 @@ button.ui-btn.ui-btn-inline {
   height: 100%;
   background-color: red;
 }
+
+/* REGISTRATION PAGE */
+
+
+/* HEADER */
+
+.header {
+    text-align: center;
+    font-size: 25px;
+    vertical-align: middle;
+    line-height: 40px;
+    height: 44px;
+    box-shadow: 0 0 20px 0px #00000042;
+}
+
+.header .h1 {
+    text-align: center;
+    font-size: 25px;
+    vertical-align: middle;
+    line-height: 40px;
+    height: 44px;
+}
+
+.header.ui-header.ui-bar-inherit.ui-header-fixed.slidedown {
+    background-color: #229aab;
+    color: white;
+    text-shadow: none;
+    font-size: 3vh;
+}
+
+.ui-btn-left.ui-link.ui-btn.ui-icon-user.ui-btn-icon-left.ui-shadow.ui-corner-all {
+    color: #fff;
+    text-shadow:  none;
+    background-color: #219aab;
+    border-color: #d8d8d8;
+    }
+
+
+  #registrationForm {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 3vh;
+
+  }
+
+/* Hide / Show Forms */
+  .hidden {
+    display: none;
+  }
