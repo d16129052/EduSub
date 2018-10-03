@@ -30,15 +30,15 @@
 			<a href="#popupLogin" id="loginButton" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-theme="a" data-transition="pop">LOGIN</a>
 
 			<div data-role="popup" id="popupMenu" data-theme="a">
-			    <div data-role="popup" data-overlay-theme="a" id="popupLogin" data-theme="a" class="ui-corner-all">
+			    <div data-role="popup" data-overlay-theme="a" id="popupLogin" data-theme="a" class="ui-corner-all" data-position-to="window">
 			        <form>
 			            <div style="padding:10px 20px;">
 			              <h3>Please sign in</h3>
 			              <label for="un" class="ui-hidden-accessible">Username:</label>
-			              <input type="text" name="user" id="un" value="" placeholder="username" data-theme="a">
+			              <input type="text" name="user" id="un" value="" placeholder="email" >
 			              <label for="pw" class="ui-hidden-accessible">Password:</label>
-			              <input type="password" name="pass" id="pw" value="" placeholder="password" data-theme="a">
-			              <button type="submit" data-theme="b" data-icon="check">Sign in</button>
+			              <input type="password" name="pass" id="pw" value="" placeholder="password" >
+			              <button type="submit"  data-icon="check">Sign in</button>
 			            </div>
 			        </form>
 			    </div>
@@ -141,10 +141,8 @@
 		        		var autocomplete = new google.maps.places.Autocomplete(input);
 		        	}
 		        </script>
-		        
+		        <!-- Google Places API Key -->
 		        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBw5IXsWoaF5P-Leyn51gEXdXC6gjBSlsk&libraries=places&callback=activatePlacesSearch"></script>
-
-
 
 		    </div>
 		</form>
