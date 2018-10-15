@@ -1,4 +1,10 @@
 /* Global Font */
+@font-face {
+  src: url(fonts/HelveticaNeue-Light.ttf);
+  font-family: helvectica neue;
+}
+
+
 * {
     font-family: helvetica neue;
     }
@@ -88,6 +94,13 @@ button.ui-btn.ui-btn-inline {
     background-color: #219aab;
     border-color: #d8d8d8;
     }
+
+#backbutton {
+  background: none;
+    color: white;
+    text-shadow: none;
+    border: none;
+}
 
 
   #registrationForm {

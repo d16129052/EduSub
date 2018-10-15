@@ -100,10 +100,12 @@
 						<input type="text" name="phoneNumber" required><br>
 						<label for="text-1">Address</label>
 						<input type="text" name="location" id="autocomplete" required><br>
-					    <label for="text-1">Email</label>
+						<label for="text-1">Email</label>
 					    <input type="text" name="county" required><br>
 						<label for="password">Password</label>
 	    				<input type="password" name="password" id="password" value="" required><br>
+						<label for="password">Confirm Password</label>
+						<input name="password_confirm" required="required" type="password" id="password_confirm" oninput="check(this)" /><br>
 	    				<input type="submit" value="Submit" id="registrationSubmit"><br>
 					</form>
 		        </div>
@@ -125,24 +127,41 @@
 						<input type="text" name="phoneNumber" required><br>
 						<label for="text-1">Address</label>
 						<input type="text" name="location" id="autocomplete" required><br>
-					    <label for="text-1">Email</label>
+						<label for="text-1">Email</label>
 					    <input type="text" name="county" required><br>
 						<label for="password">Password</label>
 	    				<input type="password" name="password" id="password" value="" required><br>
-	    				<input type="submit" value="Submit" id="registrationSubmit"><br>
-					</form>
+						<label for="password">Confirm Password</label>
+						<input name="password_confirm" required="required" type="password" id="password_confirm" oninput="check(this)" /><br>
+	    				<input type="submit" value="Submit" id="registrationSubmit"><br>					
+	    			</form>
 		        </div>
+		        
 		        <!-- External file for hide / display respective forms -->
 		        <script type="text/javascript" src="js/formoptions.js"></script>
+		        
 		        <!-- Google Places Autofill API Feature -->
 		        <script>
 		        	function activatePlacesSearch() {
-		        		var input = document.getElementById('autocomplete')
+		        		var input = document.getElementById('autocomplete');
 		        		var autocomplete = new google.maps.places.Autocomplete(input);
 		        	}
 		        </script>
+		        
 		        <!-- Google Places API Key -->
 		        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBw5IXsWoaF5P-Leyn51gEXdXC6gjBSlsk&libraries=places&callback=activatePlacesSearch"></script>
+
+		        <!-- Password Confirmation -->
+		        <script language='javascript' type='text/javascript'>
+    				function check(input) {
+        				if (input.value != document.getElementById('password').value) {
+         				   input.setCustomValidity('Passwords must match...');
+       				 } else {
+       				     // input is valid -- reset the error message
+       				     input.setCustomValidity('');
+       				 }
+    				}
+				</script>
 
 		    </div>
 		</form>
@@ -151,7 +170,7 @@
 
     	<!-- Header -->
         <div data-role="header" class="header" data-position="fixed">
-            <a href="#" data-rel="back" data-icon="arrow-l" class="ui-btn-left">Back</a>Registration
+            <a href="#" id="backbutton" data-rel="back" data-icon="arrow-l" class="ui-btn-left">Back</a>Registration
         </div>
 
     </div>
